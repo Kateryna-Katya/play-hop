@@ -13,6 +13,10 @@ const swiperConfigs = [
     selector: '.reviews-swiper',
     slideClass: 'reviews-swiper-slide',
     wrapperClass: 'reviews-swiper-wrapper',
+    navigation: {
+      nextEl: '.reviews-nav .custom-next',
+      prevEl: '.reviews-nav .custom-prev',
+    },
   },
   {
     selector: '.gallery-swiper',
@@ -59,18 +63,30 @@ function initSwipers() {
 
     // === REVIEWS SWIPER ===
     else if (config.selector === '.reviews-swiper') {
-      if (screenWidth < 1439) {
-        const swiper = new Swiper(container, {
-          slidesPerView: 1.1,
-          spaceBetween: 20,
-          loop: true,
+      const swiper = new Swiper(container, {
+          modules: [Navigation],
+          loop: true, 
           slideClass: config.slideClass,
           wrapperClass: config.wrapperClass,
           direction: 'horizontal',
+          navigation: config.navigation,
+          observer: true,
+          observeParents: true,
+      
+          breakpoints: {
+           374: {
+              slidesPerView: 1.1,
+              spaceBetween: 20,
+            },
+            1440: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+          },
         });
+      
         swiperInstances[id] = swiper;
       }
-    }
 
     // === GALLERY SWIPER ===
     else if (config.selector === '.gallery-swiper') {

@@ -108,3 +108,121 @@
     transform: rotate(180deg);
    }
  }
+ /* Reviews */
+ .reviews-title{
+    margin-bottom: 28px;
+ }
+ .reviews-swiper-slide{
+    cursor: pointer;
+    border: 3px solid #9dff0f;
+        border-radius: 6px;
+        padding: 22px 36px;
+ }
+ .reviews-text{
+    margin-top: 16px;
+    margin-bottom: 18px;
+    font-family: "Quicksand", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+        color: #fff;
+        width: 233px;
+        height: 65px;
+ }
+ .reviews-slide-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+ }
+ .reviews-author{
+    font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #8e04ed;
+ }
+ @media only screen and (min-width: 1439px) {
+  .reviews-title{
+    margin-bottom: 36px;
+  }
+ }
+ /* Start Playing Now */
+.start-section{
+    background-image: url("/img/start/mob@2x.png");
+    background-repeat: no-repeat;
+    background-position: top 40px right;
+    background-size: 270px 330px;
+}
+.start-text{
+    margin-top: 250px;
+    font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        color: #fff;
+}
+ .start-link {
+     display: block;
+     width: 243px;
+     height: 70px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 26px;
+ }
+ @media only screen and (min-width: 1439px) {
+   .start-title{
+    margin-left: 108px;
+   }
+   .start-section{
+    background-image: url("/img/start/desk@2x.png");
+    background-size: 500px 550px;
+    background-position: top -20px right;
+   }
+   .start-text{
+    margin-top: 36px;
+    margin-left: 108px;
+    width: 431px;
+    text-align: left;
+   }
+   .start-link{
+    margin-left: 108px;
+    margin-right: auto;
+    margin-top: 32px;
+   }
+ }
+ /* Features */
+ .features-container{
+    background-image: url("/img/features/mob.png");
+    background-repeat: no-repeat;
+    background-position: top 100px center;
+    background-size: 100% 209px;
+ }
+ .features-list{
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+ .features-item{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    text-align: left;
+ }
+ @media only screen and (min-width: 1439px) {
+.features-container{
+    background-image: url("/img/features/desk.png");
+        background-repeat: no-repeat;
+        background-position: top 140px left 80px;
+        background-size: 630px 351px;
+}
+.features-list{
+    margin-top: 36px;
+    width: 470px;
+        height: 292px;
+        margin-right: 0;
+        margin-left: auto;
+}
+ }
