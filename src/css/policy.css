@@ -1,0 +1,83 @@
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./footer.css');
+@import url('./header.css');
+
+.background-policy {
+    background-image: url("/img/policy/privacy-mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #fff;
+    text-align: left;
+}
+
+.policy-title {
+    margin-top: 70px;
+    margin-bottom: 28px;
+    text-shadow: none;
+    text-align: center;
+}
+
+.text-span {
+    font-weight: 700;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.policy-subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.policy-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.text {
+    margin-top: 16px;
+}
+
+.mail-link {
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 1439px) {
+    .background-policy{
+        background-image: url("/img/policy/privacy-desk.png");
+    }
+    .policy-container {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    .policy-title {
+        margin-top: 50px;
+    }
+
+    .header-container {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    .footer-container {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+}
