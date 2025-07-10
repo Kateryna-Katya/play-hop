@@ -20,15 +20,55 @@
     <script type="module" crossorigin src="/play-hop/index.js"></script>
     <link rel="modulepreload" crossorigin href="/play-hop/assets/vendor-wKantkHV.js">
     <link rel="stylesheet" crossorigin href="/play-hop/assets/vendor-BMD19QWe.css">
-    <link rel="stylesheet" crossorigin href="/play-hop/assets/styles-Dyl663oO.css">
+    <link rel="stylesheet" crossorigin href="/play-hop/assets/styles-Bt8Z_csw.css">
   </head>
   <body class="main-background">
-    <header class="header">
-  <div class="container">
-   
+    <header class="header" id="site-header">
+  <div class="header-container container">
+    <button type="button" class="menu-button" aria-label="menu toggle">
+      <span class="icon">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 36V33H42V36H6ZM6 25.5V22.5H42V25.5H6ZM6 15V12H42V15H6Z" fill="white" />
+        </svg>
+      </span>
+    </button>
+    <nav class="nav ">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="links" href="index.html#Home">Home</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Advantages">Advantages</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Gallery">Gallery</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Reviews">Reviews</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Features">Features</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#FAQ">FAQ</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
-
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+  <ul class="menu-list">
+    <li><a class="menu-list-item" href="index.html#Home">Home</a></li>
+    <li><a class="menu-list-item" href="index.html#Advantages">Advantages</a></li>
+    <li>
+      <a class="menu-list-item" href="index.html#Gallery">Gallery</a>
+    </li>
+    <li><a class="menu-list-item" href="index.html#Reviews">Reviews</a></li>
+    <li><a class="menu-list-item" href="index.html#Features">Features</a></li>
+    <li><a class="menu-list-item" href="index.html#FAQ">FAQ</a></li>
+  </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
@@ -42,7 +82,7 @@
     </div>
 </article>
 <!-- Advantages -->
-<section class="advantages-section">
+<section class="advantages-section" id="Advantages">
     <div class="container">
         <h2 class="advantages-title">Advantages</h2>
         <ul class="advantages-list">
@@ -86,7 +126,7 @@
     </div>
 </section>
 <!-- Gallery -->
-<section class="gallery-section">
+<section class="gallery-section" id="Gallery">
     <div class="container">
         <h2 class="gallery-title">Gallery</h2>
         <div class="swiper gallery-swiper">
@@ -119,7 +159,7 @@
     </div>
 </section>
 <!-- Reviews -->
-<section class="reviews-section">
+<section class="reviews-section" id="Reviews">
     <div class="container">
         <h2 class="reviews-title">Reviews</h2>
         <div class="swiper reviews-swiper">
@@ -189,7 +229,7 @@
     </div>
 </section>
 <!-- Features -->
-<section class="features-section">
+<section class="features-section" id="Features">
     <div class="container features-container">
         <h2 class="features-title">Features</h2>
         <ul class="features-list">
@@ -220,14 +260,68 @@
         </ul>
     </div>
 </section>
+<!-- FAQ -->
+<section class="faq-section" id="FAQ">
+    <div class="container faq-container">
+        <h2 class="faq-title">FAQ</h2>
+        <ul class="faq-list">
+            <li class="faq-item">
+                <div class="faq-item-wrapper">
+                    <h3 class="faq-item-title">Can I play Playhop offline?</h3>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEnSURBVHgB7ZftDYIwEIZPJ3CEjsAGuolu4ApsgBvgJozACB3BEV6bUBPFfhE4rj/uSfqnXML7tNcSiBgAcMI/J2LgSDw0hXOr4RK4Fs7Vh2sVgziGaseF7BMCPdWMC3hBngvViL95bIGA5bqRVpFpnbpbyQVqsZyWaiAS3gbmxuokEuFDV6lBWKylvcF0YJ+BMC83Gl/zg59rfM2cHnsdbB/CpsLHBDISFpwfOr/qD4Sx3+FTAplF+OyGoa1BnDH0wpSAf24SEqCtibynQ6R3SwJh2tVOQsC6cV5Qj0ztDbPdoK3BdPAGN+6F9YtX1IsMSwQOxMQ8xMFBDHD90OyGCkijAtKogDQqII0KSKMC0qiANCogjQpIowLSqIA0KiCNCkijAtK8ATClb0/9qvQFAAAAAElFTkSuQmCC" alt="Arrow up" loading="lazy" width="24" height="24">
+                </div>
+                <p class="faq-text">Absolutely! Most games work perfectly without Wi-Fi or data.</p>
+            </li>
+            <li class="faq-item">
+                <div class="faq-item-wrapper">
+                    <h3 class="faq-item-title">Is this app safe for kids?</h3>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEnSURBVHgB7ZftDYIwEIZPJ3CEjsAGuolu4ApsgBvgJozACB3BEV6bUBPFfhE4rj/uSfqnXML7tNcSiBgAcMI/J2LgSDw0hXOr4RK4Fs7Vh2sVgziGaseF7BMCPdWMC3hBngvViL95bIGA5bqRVpFpnbpbyQVqsZyWaiAS3gbmxuokEuFDV6lBWKylvcF0YJ+BMC83Gl/zg59rfM2cHnsdbB/CpsLHBDISFpwfOr/qD4Sx3+FTAplF+OyGoa1BnDH0wpSAf24SEqCtibynQ6R3SwJh2tVOQsC6cV5Qj0ztDbPdoK3BdPAGN+6F9YtX1IsMSwQOxMQ8xMFBDHD90OyGCkijAtKogDQqII0KSKMC0qiANCogjQpIowLSqIA0KiCNCkijAtK8ATClb0/9qvQFAAAAAElFTkSuQmCC" alt="Arrow up" loading="lazy" width="24" height="24">
+                </div>
+                <p class="faq-text">Yes! All games are family-friendly and carefully selected for all ages.</p>
+            </li>
+            <li class="faq-item">
+                <div class="faq-item-wrapper">
+                    <h3 class="faq-item-title">Do I need to pay to unlock more games?</h3>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEnSURBVHgB7ZftDYIwEIZPJ3CEjsAGuolu4ApsgBvgJozACB3BEV6bUBPFfhE4rj/uSfqnXML7tNcSiBgAcMI/J2LgSDw0hXOr4RK4Fs7Vh2sVgziGaseF7BMCPdWMC3hBngvViL95bIGA5bqRVpFpnbpbyQVqsZyWaiAS3gbmxuokEuFDV6lBWKylvcF0YJ+BMC83Gl/zg59rfM2cHnsdbB/CpsLHBDISFpwfOr/qD4Sx3+FTAplF+OyGoa1BnDH0wpSAf24SEqCtibynQ6R3SwJh2tVOQsC6cV5Qj0ztDbPdoK3BdPAGN+6F9YtX1IsMSwQOxMQ8xMFBDHD90OyGCkijAtKogDQqII0KSKMC0qiANCogjQpIowLSqIA0KiCNCkijAtK8ATClb0/9qvQFAAAAAElFTkSuQmCC" alt="Arrow up" loading="lazy" width="24" height="24">
+                </div>
+                <p class="faq-text">Nope! The core collection is free, with optional in-app purchases for extras.</p>
+            </li>
+            <li class="faq-item">
+                <div class="faq-item-wrapper">
+                    <h3 class="faq-item-title">How often do you add new games?</h3>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEnSURBVHgB7ZftDYIwEIZPJ3CEjsAGuolu4ApsgBvgJozACB3BEV6bUBPFfhE4rj/uSfqnXML7tNcSiBgAcMI/J2LgSDw0hXOr4RK4Fs7Vh2sVgziGaseF7BMCPdWMC3hBngvViL95bIGA5bqRVpFpnbpbyQVqsZyWaiAS3gbmxuokEuFDV6lBWKylvcF0YJ+BMC83Gl/zg59rfM2cHnsdbB/CpsLHBDISFpwfOr/qD4Sx3+FTAplF+OyGoa1BnDH0wpSAf24SEqCtibynQ6R3SwJh2tVOQsC6cV5Qj0ztDbPdoK3BdPAGN+6F9YtX1IsMSwQOxMQ8xMFBDHD90OyGCkijAtKogDQqII0KSKMC0qiANCogjQpIowLSqIA0KiCNCkijAtK8ATClb0/9qvQFAAAAAElFTkSuQmCC" alt="Arrow up" loading="lazy" width="24" height="24">
+                </div>
+                <p class="faq-text">New games and updates arrive regularly—keep an eye out!</p>
+            </li>
+            <li class="faq-item">
+                <div class="faq-item-wrapper">
+                    <h3 class="faq-item-title">Can I play with friends?</h3>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEnSURBVHgB7ZftDYIwEIZPJ3CEjsAGuolu4ApsgBvgJozACB3BEV6bUBPFfhE4rj/uSfqnXML7tNcSiBgAcMI/J2LgSDw0hXOr4RK4Fs7Vh2sVgziGaseF7BMCPdWMC3hBngvViL95bIGA5bqRVpFpnbpbyQVqsZyWaiAS3gbmxuokEuFDV6lBWKylvcF0YJ+BMC83Gl/zg59rfM2cHnsdbB/CpsLHBDISFpwfOr/qD4Sx3+FTAplF+OyGoa1BnDH0wpSAf24SEqCtibynQ6R3SwJh2tVOQsC6cV5Qj0ztDbPdoK3BdPAGN+6F9YtX1IsMSwQOxMQ8xMFBDHD90OyGCkijAtKogDQqII0KSKMC0qiANCogjQpIowLSqIA0KiCNCkijAtK8ATClb0/9qvQFAAAAAElFTkSuQmCC" alt="Arrow up" loading="lazy" width="24" height="24">
+                </div>
+                <p class="faq-text">Definitely! Some games include fun multiplayer and challenge modes.</p>
+            </li>
+        </ul>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-   
+  <div class="container footer-container">
+    <ul class="footer-navigation">
+      <li class="footer-link">
+        <a class="footer-underline" href="./privacy.html">Privacy policy</a>
+      </li>
+      <li class="footer-link">
+        <a class="footer-underline" href="./terms.html">Terms and Conditions</a>
+      </li>
+
+      <li class="footer-link">
+        <a class="footer-underline" href="./cookies.html">Cookies Policy</a>
+      </li>
+    </ul>
+    <p class="footer-text">© 2025 consultinghone.com. All rights reserved</p>
   </div>
 </footer>
-
 
   </body>
 </html>
