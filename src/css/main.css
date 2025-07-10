@@ -78,3 +78,33 @@
         height: 66px;
         }
  }
+ /* Gallery */
+ .gallery-title{
+    margin-bottom: 28px;
+ }
+ .gallery-swiper-slide{
+    cursor: pointer;
+ }
+ .custom-navigation{
+    display: none;
+ }
+ @media only screen and (min-width: 1439px) {
+   .gallery-title{
+    margin-bottom: 36px;
+   }
+   .custom-navigation{
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   }
+   .custom-arrow{
+    background-color: inherit;
+    border: none;
+    width: 48px;
+    height: 48px;
+   }
+   .custom-next{
+    transform: rotate(180deg);
+   }
+ }
